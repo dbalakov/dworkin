@@ -1,7 +1,7 @@
 {
   "name": "dworkin",
   "description": "API",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "keywords": [
     "express",
     "api"
@@ -35,6 +35,6 @@
     "express-namespace": "~0.1.1"
   },
   "main": "./index.js",
-  "_id": "dworkin@0.1.0",
+  "_id": "dworkin@0.1.1",
   "readme": "API"
 }
