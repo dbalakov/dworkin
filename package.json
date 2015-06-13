@@ -1,0 +1,40 @@
+{
+  "name": "dworkin",
+  "description": "API",
+  "version": "0.1.0",
+  "keywords": [
+    "express",
+    "api"
+  ],
+  "scripts": {
+    "test": "mocha --recursive"
+  },
+  "homepage": "https://github.com/dbalakov/dworkin",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dbalakov/dworkin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dbalakov/dworkin/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Dmitry Balakov",
+    "email": "dmitry@balakov.net",
+    "url": "http://github.com/dbalakov/"
+  },
+  "devDependencies": {
+    "mocha": "~2.1.0",
+    "chai": "~1.10.0",
+    "request": "^2.57.0",
+    "sinon": "~1.12.2"
+  },
+  "dependencies": {
+    "bluebird": "~2.7.1",
+    "express": "~4.10.1",
+    "express-namespace": "~0.1.1"
+  },
+  "main": "./index.js",
+  "_id": "dworkin@0.1.0",
+  "readme": "API"
+}
