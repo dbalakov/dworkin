@@ -8,11 +8,6 @@ var request  = bluebird.promisifyAll(require('request'));
 var Server = require(cwd);
 
 describe('Server', function() {
-    it('constructor', function() {
-        var server = new Server();
-        assert.deepEqual(server.commands, [], 'Commands created');
-    });
-
     it('start', function(done) {
         var server = new Server();
         server.express.post('/', function(req, res) { res.send({ status : 'ok' }); });
@@ -30,7 +25,7 @@ describe('Server', function() {
     });
 
     it('plugins', function() {
-        assert.deepEqual(Server.PLUGINS, [ require(cwd + '/commands/method'), require(cwd + '/commands/directory') ], 'Plugin function was called');
+        assert.deepEqual(Server.PLUGINS, [ require(cwd + '/plugins/method'), require(cwd + '/plugins/directory') ], 'Plugin function was called');
 
         var plugin = sinon.spy();
 

@@ -7,7 +7,6 @@ require("express-namespace");
 function API() {
     var that = this;
 
-    this.commands = [];
     this.express = express();
     this.server  = Promise.promisifyAll(http.createServer(this.express));
 
@@ -17,7 +16,6 @@ function API() {
 }
 
 API.prototype.start = function(port) {
-    this.commands.forEach(function (command) { command(); });
     return this.server.listenAsync(port);
 };
 
@@ -26,8 +24,8 @@ API.prototype.stop = function() {
 };
 
 API.PLUGINS = [
-    require('./commands/method'),
-    require('./commands/directory')
+    require('./plugins/method'),
+    require('./plugins/directory')
 ];
 
 module.exports = API;
