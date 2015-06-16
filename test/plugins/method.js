@@ -6,7 +6,7 @@ var request  = bluebird.promisifyAll(require('request'));
 
 var Server = require(cwd);
 
-describe('Command', function() {
+describe('Plugins', function() {
     it('method', function(done) {
         var server = new Server();
         server.method(function(express) {

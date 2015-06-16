@@ -28,4 +28,6 @@ API.PLUGINS = [
     require('./plugins/directory')
 ];
 
+API.express = express;
+
 module.exports = API;
